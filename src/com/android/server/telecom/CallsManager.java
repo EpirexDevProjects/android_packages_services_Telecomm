@@ -537,6 +537,10 @@ public class CallsManager extends Call.ListenerBase implements VideoProviderProx
         return mCallAudioManager.getCallAudioState();
     }
 
+    void resetAudioStreamVolume() {
+        mCallAudioManager.resetAudioStreamVolume();
+    }
+
     boolean isTtySupported() {
         return mTtyManager.isTtySupported();
     }
